@@ -88,6 +88,11 @@ void data_format(string code) { //Generate .fen2c
 }
 int main(int argc, char** argv) { //Main
     std::cout << "Fenris 2.0-v1.0 C++ Execution Engine: Fenris 2.0 Standard and Executer by Jacob Scrapchansky.\n\n"; //Name and Credits
+
+	if (argc <= 1) {
+		cout << "Error: Lack of file descriptor, follow the command by a filepath to start executing." << endl << endl;
+		return 1;
+	}
 	std::cout << "Opening file: " << argv[1] << endl << endl;
 	
 	string compile_mode = "speed0"; //Set default Parse Mode
