@@ -3,7 +3,7 @@
 #include <string>
 
 #include "formats.h"
-#include "m_v_verifications.h"
+#include "mode_version_verifications.h"
 
 using namespace std;
 std::string filepath = "/home/pi/test.fen2";
